@@ -76,6 +76,8 @@ var ajaxCall = function (method, arg) {
     });
 }
 
+
+
 var xajax_id_check = function() { ajaxCall("id_check", arguments); };
 var xajax_name_check = function() { ajaxCall("name_check", arguments); };
 var xajax_tel_check = function() { ajaxCall("tel_check", arguments); };
@@ -84,7 +86,8 @@ var xajax_send_mail = function() { ajaxCall("send_mail", arguments); };
 var check_ing = -1;
 var birth_day = '940120';
 
- function check_submit()
+
+function check_submit()
  {
 
      if(!idChkResult){
@@ -95,8 +98,6 @@ var birth_day = '940120';
          $('#password1').focus();
      }else if(!nicknameChkResult){
          $('#user_nickname').focus();
-     }else if(!$('#email').val() || !$('#email_key').val()){
-         $('#email').focus();
      }else if(check_ing == 1){
     	 alert('가입 진행중입니다');
      } else{
@@ -122,19 +123,27 @@ $(document).ready(function() {
     $('#birth_date').attr('min', minDate);
 
     
-    
+    // 유저아이디 확인 
+    // blur은 포커스를 잃을 때 발생하는 이벤트 
 	$('#user_id').blur(function(){
-
+		
+		// 아이디 규칙 숨기기
 		$("#id_info_span").hide();
-
+		
+		// 아이디를 소문자로 받아와 id변수에 변환된 소문자 값을 저장
 		var id = $('#user_id').val().toLowerCase();
 		$('#user_id').val(id);
 
+		// 외부 js파일에 존재하는 함수를 불러와 실행해 조건에 맞는 메시지를 반환
 		var result_obj = chkUserId(id);
+		
+		// 조건에 맞는지 확인하여 사용가능하면 true, 그렇지 않으면 false
 		idChkResult = result_obj.flag;
 
+		// 함수로부터 받아온 메시지를 출력 
 		$("#id_message_span").text(result_obj.msg);
-
+		
+		// 조건에 맞아 true로 설정되었으면 
 		if(idChkResult == true){
 			xajax_id_check(id);
 		}

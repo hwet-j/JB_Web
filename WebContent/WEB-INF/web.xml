@@ -9,4 +9,30 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
+  
+  
+  
+   <!-- DB연동 관련 -->
+  <listener>
+  	<!-- 패키지명.클래스명 -->
+  	<listener-class>jdbc.DBCPInitListener</listener-class>
+  </listener>
+  
+  <!-- DB 커넥션풀관련 -->
+  <context-param>
+	<param-name>poolConfig</param-name>
+		<!-- param-value를 작성해줄때는 공백을 모두 포함해서 인식하기 때문에 = 연산산자 뒤에 공백이없도록 작성해야함 -->
+		<param-value>
+			jdbcdriver=com.mysql.cj.jdbc.Driver
+			jdbcUrl=jdbc:mysql://localhost:3306/chap14?characterEncoding=utf8&amp;serverTimezone=UTC
+			dbUser=jspexam
+			dbPass=jsppw
+			validationQuery=select 1
+			minIdle=3
+			maxTotal=30
+			poolName=board
+		</param-value> 
+	</context-param>
+	
+	
 </web-app>

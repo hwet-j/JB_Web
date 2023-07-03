@@ -44,8 +44,19 @@
             <div class="top-nav inx">
                 <ul>
                 
+                	<!-- 메인 메뉴   -->
+                    <li class="menu01 "><a href="#" class="menu">메인</a>
+	                    <div class="sub-menu">
+	                     	<ul>
+	                          <li><a href="#">메뉴1</a></li>
+	                          <li><a href="#">메뉴2</a></li>
+	                          <li><a href="#">메뉴3</a></li>
+							</ul>
+	                    </div>
+                    </li>
+                
                 	<!-- 김현민 메뉴   -->
-                    <li class="menu01 "><a href="#" class="menu">김현민</a>
+                    <li class="menu02 "><a href="#" class="menu">김현민</a>
 	                    <div class="sub-menu">
 	                     	<ul>
 	                          <li><a href="#">메뉴1</a></li>
@@ -57,7 +68,7 @@
                     
                     
                  	<!-- 백경탁 메뉴   -->  
-                    <li class="menu02 "><a href="#" class="menu">백경탁</a>
+                    <li class="menu03 "><a href="#" class="menu">백경탁</a>
                         <div class="sub-menu">
                             <ul>
                               <li><a href="#">메뉴1</a></li>
@@ -68,7 +79,7 @@
                     </li>
                     
                     <!-- 전재권 메뉴   -->
-                    <li class="menu03 "><a href="#" class="menu">전재권</a>
+                    <li class="menu04 "><a href="#" class="menu">전재권</a>
                         <div class="sub-menu">
                             <ul>
                               <li><a href="#">메뉴1</a></li>
@@ -79,7 +90,7 @@
                     </li>
                     
                     <!-- 조중현 메뉴   -->
-                    <li class="menu04 "><a href="#" class="menu">조중현</a>
+                    <li class="menu05 "><a href="#" class="menu">조중현</a>
                         <div class="sub-menu">
                             <ul>
                               <li><a href="#">메뉴1</a></li>
@@ -90,7 +101,7 @@
                     </li>
                     
                     <!-- 김재정 메뉴 -->
-                    <li class="menu05 "><a href="#" class="menu">김재정</a>
+                    <li class="menu06 "><a href="#" class="menu">김재정</a>
                         <div class="sub-menu">
                             <ul>
                               <li><a href="#">메뉴1</a></li>
@@ -102,7 +113,7 @@
                     
                     
                     <!-- 정회창 메뉴 -->
-                    <li class="menu06 "><a href="#" class="menu">정회창</a>
+                    <li class="menu07 "><a href="#" class="menu">정회창</a>
                         <div class="sub-menu">
                             <ul>
                               <li><a href="<%=request.getContextPath() %>/hwet/board.jsp">게시판</a></li>
@@ -114,7 +125,7 @@
                     
                     
                     <!-- 홍진호 메뉴 -->
-                    <li class="menu07 "><a href="#" class="menu">홍진호</a>
+                    <li class="menu08 "><a href="#" class="menu">홍진호</a>
                         <div class="sub-menu">
                             <ul>
                               <li><a href="#">메뉴1</a></li>
@@ -124,16 +135,6 @@
                         </div>
                     </li>
                     
-                    <!-- 공통 메뉴 -->
-                    <li class="menu08 "><a href="#" class="menu">전체게시판</a>
-                        <div class="sub-menu">
-                            <ul>
-                              <li><a href="#">메뉴1</a></li>
-	                          <li><a href="#">메뉴2</a></li>
-	                          <li><a href="#">메뉴3</a></li>
-                            </ul>
-                        </div>
-                    </li>
                     
                     <!-- 공통 메뉴 -->
                     <li class="menu09 "><a href="#" class="menu">공지사항</a>

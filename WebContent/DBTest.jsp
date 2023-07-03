@@ -43,9 +43,17 @@ try {
  	
     out.println("<h3>접속완료ㅇㅇ</h3>");
     // 리소스 정리
+    
+    while(rs.next()){
+		out.println("<p>" + rs.getString("memberid") + "</p>");
+		out.println("<p>" + rs.getString("password") + "</p>");
+		out.println("<p>" + rs.getString("name") + "</p>");
+		out.println("<p>" + rs.getString("email") + "</p>");
+    }
+    
+    rs.close();
     stmt.close();
     conn.close();
-
 } catch (Exception e) {
     out.println("<h3>오류가 발생했습니다.</h3>");
     e.printStackTrace();
