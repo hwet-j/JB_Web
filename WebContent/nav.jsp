@@ -1,12 +1,11 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
     
-<script src="https://www.googleoptimize.com/optimize.js?id=OPT-N6TJ7LN"></script>
+<script src="https://www.googleoptimize.com/optimize.js"></script>
 <script src='//www.googletagservices.com/tag/js/gpt.js' async="async"></script> 
 
 <link rel="stylesheet" type="text/css" href="<%=request.getContextPath() %>/css/stylesheet_newest.css" />
 <link rel="stylesheet" type="text/css" href="<%=request.getContextPath() %>/css/index_page_newest.css" />
-<link rel="stylesheet" type="text/css" href="<%= request.getContextPath() %>/css/popup_layer.css" />
 <link rel="shortcut icon" href="<%= request.getContextPath() %>/favicon.ico" />
 
 <script type="text/javascript" src="<%= request.getContextPath() %>/js/default3.js"></script>
@@ -116,7 +115,7 @@
                     <li class="menu07 "><a href="#" class="menu">정회창</a>
                         <div class="sub-menu">
                             <ul>
-                              <li><a href="<%=request.getContextPath() %>/hwet/board.jsp">게시판</a></li>
+                              <li><a href="<%=request.getContextPath() %>/hwet/board/boardmain.jsp">게시판</a></li>
 	                          <li><a href="#">메뉴2</a></li>
 	                          <li><a href="#">메뉴3</a></li>
                             </ul>

@@ -14,8 +14,6 @@
 <meta name="og:title" content="B조" />
 <meta name="og:description" content="잡다" />
 
-
-
 <script>var googletag = googletag || {};googletag.cmd = googletag.cmd || [];var display_googletags = display_googletags || [];</script>
 
 
@@ -96,30 +94,6 @@ var hotKeyVar = new function() { this.enable = true; this.keys = ['a','f','z','h
 	'https://www.ppomppu.co.kr/zboard/zboard.php?id=free_gallery','https://www.ppomppu.co.kr/zboard/zboard.php?id=news2','https://www.ppomppu.co.kr/zboard/zboard.php?id=review2']; };
 </script>
 
-</head>
-
-<body>
-
-<div class="wrapper">
-
-	<!-- 사이드 리모컨 메뉴 include -->
-	<!-- 각자 페이지마다 다르게 구현 하여 include -->
-	<%@ include file="mainremote.jsp"%>
-	
-	<div class="contents">
-		
-		<!-- .wrapper .contents 내부에 작성 -->
-		<!-- 상위 메뉴 include -->
-		<%@ include file="nav.jsp"%>
-
-
-
-
-		 <!-- ST container ST -->
-		<div class="container">
-
-                
-
 <script type="text/javascript">
 function setNoticeLayers(name,value,expiredays){
 	var todayDate = new Date();
@@ -134,7 +108,27 @@ function closeNoticeLayers(cookiename,layername,closename,expiredays) {
 }
 </script>
 
+</head>
 
+<body>
+
+<div class="wrapper">
+
+	<!-- 사이드 리모컨 메뉴 include -->
+	<!-- 각자 페이지마다 다르게 구현 하여 include -->
+	<%@ include file="mainremote.jsp"%>
+	
+	<div class="contents">
+		
+		<!-- .wrapper .contents 내부에 작성 -->
+		<!-- 상위 메뉴 include -->
+		
+		<%@ include file="nav.jsp" %>
+		
+
+
+	 <!-- ST container ST -->
+	<div class="container">
 
 	<!-- ST Left Section ST -->
 	<div class="left">

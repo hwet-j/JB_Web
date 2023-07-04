@@ -1,0 +1,10 @@
+/* CSS Document */
+#page_list {padding:5px 10px 5px 10px; text-align: right;}
+#page_list .han {font-size: 9pt; text-align: left;}
+#page_list .han a {color: #505050;text-decoration: none;border:1px solid #CCC;margin-left:0px;padding:0px 6px 0px 6px;vertical-align: middle;height: 22px;box-sizing: border-box;display: inline-block;}
+#page_list .page_inert {margin-left:5px; padding:3px 5px 5px 5px; color:#F00; font-weight:bold;}
+#page_list .page_inert01 {margin-left:5px; padding:3px 0px 5px 0px; color:#000;}
+#page_list .page_next { background-color:#f1f1f1; }
+#page_list .page_next img {padding:0px 0px 2px 2px; border:0px;}
+#page_list .page_prev { background-color:#f1f1f1;}
+#page_list .page_prev img {padding: 0px 4px 3px 0px;border:0px;}
