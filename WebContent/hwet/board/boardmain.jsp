@@ -49,7 +49,7 @@
 	<!-- ST Left Section ST -->
 	<div class="left">
 
-	<h3>게시판 관리 메인</h3>
+	<h2>게시판 관리 메인</h2>
 		<ul>
 			<% if (session.getAttribute("login_user") == null) { %>
 		    <li><a href="#" onclick="showAlert();">등록하기</a></li>

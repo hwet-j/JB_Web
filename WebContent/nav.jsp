@@ -1,35 +1,29 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
     
-<script src="https://www.googleoptimize.com/optimize.js"></script>
 <script src='//www.googletagservices.com/tag/js/gpt.js' async="async"></script> 
 
 <link rel="stylesheet" type="text/css" href="<%=request.getContextPath() %>/css/stylesheet_newest.css" />
 <link rel="stylesheet" type="text/css" href="<%=request.getContextPath() %>/css/index_page_newest.css" />
 <link rel="shortcut icon" href="<%= request.getContextPath() %>/favicon.ico" />
 
-<script type="text/javascript" src="<%= request.getContextPath() %>/js/default3.js"></script>
 <script type="text/javascript" src="<%= request.getContextPath() %>/js/jquery-1.11.2.min.js"></script>
 <script type="text/javascript" src="<%= request.getContextPath() %>/js/jquery-migrate-1.2.1.min.js"></script>
 <script type="text/javascript" src="<%= request.getContextPath() %>/js/jquery.rolling.js"></script>
 <script type="text/javascript" src="<%= request.getContextPath() %>/js/jquery.elipsis.js"></script>
 <script type="text/javascript" src="<%= request.getContextPath() %>/js/writeCapture.js"></script>
 <script type="text/javascript" src="<%= request.getContextPath() %>/js/jquery.writeCapture.js"></script>
-<script type="text/javascript" src="<%= request.getContextPath() %>/js/jquery.hotkeys-0.7.8.js"></script>
-<script type="text/javascript" src="<%= request.getContextPath() %>/js/load-hotkey.min.js"></script>
-<script type="text/javascript" src="<%= request.getContextPath() %>/js/jquery.cookie.js" ></script>
 <script type="text/javascript" src="<%= request.getContextPath() %>/js/jquery.bxslider.min.js"></script>
-<script type="text/javascript" src="<%= request.getContextPath() %>/js/main.js"></script>
-
+ 
 
 
 <!-- 최상단 logo 및 검색  -->
  <div class="inx_header">
      <div class="inx_wrap">
 
-         <a href="<%= request.getContextPath() %>/index.jsp" class="logo"><img src="<%= request.getContextPath() %>/images/logo.png" width="195" height="41"/></a>
+         <a href="<%= request.getContextPath() %>/index.jsp" class="logo"><img src="<%= request.getContextPath() %>/images/logo.png" width="150" height="58"/></a>
 		<span class="slogan">중앙정보처리</span>
-
+ 
              <form method="get" name="search1" style="" action="https://www.ppomppu.co.kr/search_bbs.php">
                  <div class="input-search"><input type="text" name="keyword" style="float:left;width:97%" value="방탄소년단" />
              </div>
