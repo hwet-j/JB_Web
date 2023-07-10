@@ -404,7 +404,7 @@ String.prototype.trim = function() {
             
             <li>
 	            <span class="j_t">전화번호</span> 
-	            <input type="tel" id="phonenum" name="phonenum" placeholder="000-1234-5678" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}" required/>
+	            <input type="tel" id="phonenum" name="phonenum" placeholder="000-1234-5678" pattern="[0-9]{3}-[0-9]{3,4}-[0-9]{4}" required/>
 	            <div class="arrow_box" id="tel_info_span">
 	                <span>* 전화번호 생성 규칙 
 	                <br> 1. 000-1234-5678 의 형식을 유지
